@@ -227,7 +227,7 @@ public:
         myfile.open("example.txt");
         myfile << "TS:" << req_sys->ts << " written by:" << req_sys->name;
         myfile.close();
-        if (req_sys->name = this->s1->name) // this system accessed the resources.
+        if (req_sys->name == this->s1->name) // this system accessed the resources.
         {
             SYS *topSys = req_buf.top(); // send 'F' ack to someone who was second and now first.
             string name = topSys->name;
